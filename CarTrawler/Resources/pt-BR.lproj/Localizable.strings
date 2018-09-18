@@ -1,0 +1,12 @@
+"car.list.title" = "Carros";
+"car.list.header.pickup.title" = "Data retirada";
+"car.list.header.return.title" = "Data devolucao";
+"car.detail.title" = "Detalhes do carro";
+
+"car.vendor.title" = "Locadora";
+"car.status.title" = "Status";
+"car.price.title" = "Preco";
+"car.air.conditioner.title" = "Air Cond.";
+"car.model.name.title" = "Modelo";
+"car.fuel.type.title" = "Combustivel";
+"car.passenger.qnt.title" = "Qtd. Passageiros";

@@ -1,0 +1,58 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - ISO8601DateFormatter (0.8)
+  - Mantle (2.1.0):
+    - Mantle/extobjc (= 2.1.0)
+  - Mantle/extobjc (2.1.0)
+  - MBProgressHUD (1.1.0)
+  - OCMock (3.4.2)
+  - PureLayout (3.0.0)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+
+DEPENDENCIES:
+  - AFNetworking (= 3.2.1)
+  - ISO8601DateFormatter (= 0.8)
+  - Mantle (= 2.1.0)
+  - MBProgressHUD (= 1.1.0)
+  - OCMock (~> 3.4.2)
+  - PureLayout (= 3.0)
+  - SDWebImage (= 4.4.2)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - ISO8601DateFormatter
+    - Mantle
+    - MBProgressHUD
+    - OCMock
+    - PureLayout
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  ISO8601DateFormatter: 4551b6ce4f83185425f583b0b3feb3c7b59b942c
+  Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  OCMock: ebe9ee1dca7fbed0ff9193ac0b3e2d8862ea56f6
+  PureLayout: 270dfee2236f697ab1d5e2771c2e5c248495fa0d
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+
+PODFILE CHECKSUM: b5e22c4b2d95c2658d2503e85e804a9133103671
+
+COCOAPODS: 1.5.3

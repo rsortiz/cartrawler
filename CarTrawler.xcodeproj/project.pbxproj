@@ -1,0 +1,919 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0780CF8CE3FC8842C57E0F5A /* libPods-CarTrawler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6BC150812A48C0E032D55DA /* libPods-CarTrawler.a */; };
+		45A12D5B673993ED8C16717E /* libPods-CarTrawlerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C25F0D7F59BEC65DCD0172D2 /* libPods-CarTrawlerTests.a */; };
+		66D279962150E675002E4CC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D279952150E675002E4CC4 /* AppDelegate.m */; };
+		66D279992150E676002E4CC4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D279982150E676002E4CC4 /* ViewController.m */; };
+		66D2799C2150E676002E4CC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66D2799A2150E676002E4CC4 /* Main.storyboard */; };
+		66D2799E2150E677002E4CC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66D2799D2150E677002E4CC4 /* Assets.xcassets */; };
+		66D279A12150E677002E4CC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66D2799F2150E677002E4CC4 /* LaunchScreen.storyboard */; };
+		66D279A42150E677002E4CC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D279A32150E677002E4CC4 /* main.m */; };
+		66D279C02150E763002E4CC4 /* UIColor+CTColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D279BF2150E763002E4CC4 /* UIColor+CTColors.m */; };
+		66D279C32150E7AD002E4CC4 /* UILabel+CTStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D279C22150E7AD002E4CC4 /* UILabel+CTStyle.m */; };
+		66D279C62150FB18002E4CC4 /* CTModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D279C52150FB18002E4CC4 /* CTModel.m */; };
+		66D279C92150FE3D002E4CC4 /* CTLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D279C82150FE3D002E4CC4 /* CTLocation.m */; };
+		66D279CC2150FE78002E4CC4 /* CTRentalCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D279CB2150FE78002E4CC4 /* CTRentalCore.m */; };
+		66D279CF2150FEAE002E4CC4 /* CTRentalStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D279CE2150FEAE002E4CC4 /* CTRentalStore.m */; };
+		66D279D22150FEFA002E4CC4 /* CTVehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D279D12150FEFA002E4CC4 /* CTVehicle.m */; };
+		66D279D52150FF34002E4CC4 /* CTVehicleVendorAvailables.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D279D42150FF34002E4CC4 /* CTVehicleVendorAvailables.m */; };
+		66D279D82150FF6C002E4CC4 /* CTVendor.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D279D72150FF6C002E4CC4 /* CTVendor.m */; };
+		66D279DD215100A1002E4CC4 /* CTCarListModuleBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D279DC215100A1002E4CC4 /* CTCarListModuleBuilder.m */; };
+		66D279E72151014E002E4CC4 /* CTCarListHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D279E62151014E002E4CC4 /* CTCarListHeaderView.m */; };
+		66D279EB21510909002E4CC4 /* CTCarListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D279E921510909002E4CC4 /* CTCarListCell.m */; };
+		66D279EC21510909002E4CC4 /* CTCarListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66D279EA21510909002E4CC4 /* CTCarListCell.xib */; };
+		66D279EF215109A1002E4CC4 /* CTCarListRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D279EE215109A1002E4CC4 /* CTCarListRouter.m */; };
+		66D279F321510A0C002E4CC4 /* CTCarListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D279F221510A0C002E4CC4 /* CTCarListPresenter.m */; };
+		66D279F621510A44002E4CC4 /* CTCarListViewModelMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D279F521510A44002E4CC4 /* CTCarListViewModelMapper.m */; };
+		66D279FA21510AB2002E4CC4 /* CTCarListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D279F921510AB2002E4CC4 /* CTCarListViewModel.m */; };
+		66D279FD21510ADA002E4CC4 /* CTCarVendorViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D279FC21510ADA002E4CC4 /* CTCarVendorViewModel.m */; };
+		66D27A0021510B06002E4CC4 /* CTCarViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D279FF21510B06002E4CC4 /* CTCarViewModel.m */; };
+		66D27A0321510B44002E4CC4 /* CTCarListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D27A0221510B44002E4CC4 /* CTCarListInteractor.m */; };
+		66D27A0621510BB7002E4CC4 /* CTCarListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D27A0521510BB7002E4CC4 /* CTCarListViewController.m */; };
+		66D27A0C21510DDD002E4CC4 /* CTCarDetailsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D27A0B21510DDD002E4CC4 /* CTCarDetailsPresenter.m */; };
+		66D27A10215110C1002E4CC4 /* CTCarDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D27A0F215110C1002E4CC4 /* CTCarDetailsViewController.m */; };
+		66D27A1321511116002E4CC4 /* CTRestClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D27A1221511116002E4CC4 /* CTRestClient.m */; };
+		66D27A1721511175002E4CC4 /* CTCarService.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D27A1621511175002E4CC4 /* CTCarService.m */; };
+		66D27A1A215111AA002E4CC4 /* CTCarServiceMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D27A19215111AA002E4CC4 /* CTCarServiceMapper.m */; };
+		66D27A1F21511CFF002E4CC4 /* CTCarDetailsModuleBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D27A1E21511CFF002E4CC4 /* CTCarDetailsModuleBuilder.m */; };
+		66D27A27215120F3002E4CC4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66D27A25215120F3002E4CC4 /* Localizable.strings */; };
+		66D27A3121512E91002E4CC4 /* CTCarServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D27A3021512E91002E4CC4 /* CTCarServiceTests.m */; };
+		66D27A332151384E002E4CC4 /* cars.json in Resources */ = {isa = PBXBuildFile; fileRef = 66D27A322151384E002E4CC4 /* cars.json */; };
+		66D27A3421513988002E4CC4 /* cars.json in Resources */ = {isa = PBXBuildFile; fileRef = 66D27A322151384E002E4CC4 /* cars.json */; };
+		66D27A3621513DD2002E4CC4 /* CTCarListModuleBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D27A3521513DD2002E4CC4 /* CTCarListModuleBuilderTests.m */; };
+		66D27A3821513EC5002E4CC4 /* CTCarDetailsModuleBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D27A3721513EC5002E4CC4 /* CTCarDetailsModuleBuilderTests.m */; };
+		66D27A3A21514051002E4CC4 /* CTCarListPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D27A3921514051002E4CC4 /* CTCarListPresenterTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66D279AA2150E677002E4CC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66D279892150E675002E4CC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66D279902150E675002E4CC4;
+			remoteInfo = CarTrawler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		071D19F198A87BED1CF15A31 /* Pods-CarTrawlerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarTrawlerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarTrawlerTests/Pods-CarTrawlerTests.release.xcconfig"; sourceTree = "<group>"; };
+		66D279912150E675002E4CC4 /* CarTrawler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarTrawler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66D279942150E675002E4CC4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		66D279952150E675002E4CC4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		66D279972150E675002E4CC4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		66D279982150E676002E4CC4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		66D2799B2150E676002E4CC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		66D2799D2150E677002E4CC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66D279A02150E677002E4CC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		66D279A22150E677002E4CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66D279A32150E677002E4CC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		66D279A92150E677002E4CC4 /* CarTrawlerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarTrawlerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66D279AF2150E677002E4CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66D279BE2150E763002E4CC4 /* UIColor+CTColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+CTColors.h"; sourceTree = "<group>"; };
+		66D279BF2150E763002E4CC4 /* UIColor+CTColors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CTColors.m"; sourceTree = "<group>"; };
+		66D279C12150E7AD002E4CC4 /* UILabel+CTStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+CTStyle.h"; sourceTree = "<group>"; };
+		66D279C22150E7AD002E4CC4 /* UILabel+CTStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CTStyle.m"; sourceTree = "<group>"; };
+		66D279C42150FB18002E4CC4 /* CTModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTModel.h; sourceTree = "<group>"; };
+		66D279C52150FB18002E4CC4 /* CTModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTModel.m; sourceTree = "<group>"; };
+		66D279C72150FE3D002E4CC4 /* CTLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTLocation.h; sourceTree = "<group>"; };
+		66D279C82150FE3D002E4CC4 /* CTLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTLocation.m; sourceTree = "<group>"; };
+		66D279CA2150FE78002E4CC4 /* CTRentalCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTRentalCore.h; sourceTree = "<group>"; };
+		66D279CB2150FE78002E4CC4 /* CTRentalCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTRentalCore.m; sourceTree = "<group>"; };
+		66D279CD2150FEAE002E4CC4 /* CTRentalStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTRentalStore.h; sourceTree = "<group>"; };
+		66D279CE2150FEAE002E4CC4 /* CTRentalStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTRentalStore.m; sourceTree = "<group>"; };
+		66D279D02150FEFA002E4CC4 /* CTVehicle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTVehicle.h; sourceTree = "<group>"; };
+		66D279D12150FEFA002E4CC4 /* CTVehicle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTVehicle.m; sourceTree = "<group>"; };
+		66D279D32150FF34002E4CC4 /* CTVehicleVendorAvailables.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTVehicleVendorAvailables.h; sourceTree = "<group>"; };
+		66D279D42150FF34002E4CC4 /* CTVehicleVendorAvailables.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTVehicleVendorAvailables.m; sourceTree = "<group>"; };
+		66D279D62150FF6C002E4CC4 /* CTVendor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTVendor.h; sourceTree = "<group>"; };
+		66D279D72150FF6C002E4CC4 /* CTVendor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTVendor.m; sourceTree = "<group>"; };
+		66D279DB215100A1002E4CC4 /* CTCarListModuleBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTCarListModuleBuilder.h; sourceTree = "<group>"; };
+		66D279DC215100A1002E4CC4 /* CTCarListModuleBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTCarListModuleBuilder.m; sourceTree = "<group>"; };
+		66D279E52151014E002E4CC4 /* CTCarListHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTCarListHeaderView.h; sourceTree = "<group>"; };
+		66D279E62151014E002E4CC4 /* CTCarListHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTCarListHeaderView.m; sourceTree = "<group>"; };
+		66D279E821510909002E4CC4 /* CTCarListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTCarListCell.h; sourceTree = "<group>"; };
+		66D279E921510909002E4CC4 /* CTCarListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTCarListCell.m; sourceTree = "<group>"; };
+		66D279EA21510909002E4CC4 /* CTCarListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CTCarListCell.xib; sourceTree = "<group>"; };
+		66D279ED215109A1002E4CC4 /* CTCarListRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTCarListRouter.h; sourceTree = "<group>"; };
+		66D279EE215109A1002E4CC4 /* CTCarListRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTCarListRouter.m; sourceTree = "<group>"; };
+		66D279F0215109F0002E4CC4 /* CTCarListEventHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTCarListEventHandler.h; sourceTree = "<group>"; };
+		66D279F121510A0C002E4CC4 /* CTCarListPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTCarListPresenter.h; sourceTree = "<group>"; };
+		66D279F221510A0C002E4CC4 /* CTCarListPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTCarListPresenter.m; sourceTree = "<group>"; };
+		66D279F421510A44002E4CC4 /* CTCarListViewModelMapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTCarListViewModelMapper.h; sourceTree = "<group>"; };
+		66D279F521510A44002E4CC4 /* CTCarListViewModelMapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTCarListViewModelMapper.m; sourceTree = "<group>"; };
+		66D279F721510A7D002E4CC4 /* CTCarListViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTCarListViewProtocol.h; sourceTree = "<group>"; };
+		66D279F821510AB2002E4CC4 /* CTCarListViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTCarListViewModel.h; sourceTree = "<group>"; };
+		66D279F921510AB2002E4CC4 /* CTCarListViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTCarListViewModel.m; sourceTree = "<group>"; };
+		66D279FB21510ADA002E4CC4 /* CTCarVendorViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTCarVendorViewModel.h; sourceTree = "<group>"; };
+		66D279FC21510ADA002E4CC4 /* CTCarVendorViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTCarVendorViewModel.m; sourceTree = "<group>"; };
+		66D279FE21510B06002E4CC4 /* CTCarViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTCarViewModel.h; sourceTree = "<group>"; };
+		66D279FF21510B06002E4CC4 /* CTCarViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTCarViewModel.m; sourceTree = "<group>"; };
+		66D27A0121510B44002E4CC4 /* CTCarListInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTCarListInteractor.h; sourceTree = "<group>"; };
+		66D27A0221510B44002E4CC4 /* CTCarListInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTCarListInteractor.m; sourceTree = "<group>"; };
+		66D27A0421510BB7002E4CC4 /* CTCarListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTCarListViewController.h; sourceTree = "<group>"; };
+		66D27A0521510BB7002E4CC4 /* CTCarListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTCarListViewController.m; sourceTree = "<group>"; };
+		66D27A0921510DC4002E4CC4 /* CTCarDetailsEventHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTCarDetailsEventHandler.h; sourceTree = "<group>"; };
+		66D27A0A21510DDD002E4CC4 /* CTCarDetailsPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTCarDetailsPresenter.h; sourceTree = "<group>"; };
+		66D27A0B21510DDD002E4CC4 /* CTCarDetailsPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTCarDetailsPresenter.m; sourceTree = "<group>"; };
+		66D27A0D21511054002E4CC4 /* CTCarDetailsViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTCarDetailsViewProtocol.h; sourceTree = "<group>"; };
+		66D27A0E215110C1002E4CC4 /* CTCarDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTCarDetailsViewController.h; sourceTree = "<group>"; };
+		66D27A0F215110C1002E4CC4 /* CTCarDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTCarDetailsViewController.m; sourceTree = "<group>"; };
+		66D27A1121511116002E4CC4 /* CTRestClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTRestClient.h; sourceTree = "<group>"; };
+		66D27A1221511116002E4CC4 /* CTRestClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTRestClient.m; sourceTree = "<group>"; };
+		66D27A1521511175002E4CC4 /* CTCarService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTCarService.h; sourceTree = "<group>"; };
+		66D27A1621511175002E4CC4 /* CTCarService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTCarService.m; sourceTree = "<group>"; };
+		66D27A18215111AA002E4CC4 /* CTCarServiceMapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTCarServiceMapper.h; sourceTree = "<group>"; };
+		66D27A19215111AA002E4CC4 /* CTCarServiceMapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTCarServiceMapper.m; sourceTree = "<group>"; };
+		66D27A1D21511CFF002E4CC4 /* CTCarDetailsModuleBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTCarDetailsModuleBuilder.h; sourceTree = "<group>"; };
+		66D27A1E21511CFF002E4CC4 /* CTCarDetailsModuleBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTCarDetailsModuleBuilder.m; sourceTree = "<group>"; };
+		66D27A2121512064002E4CC4 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		66D27A26215120F3002E4CC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		66D27A2921512122002E4CC4 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		66D27A3021512E91002E4CC4 /* CTCarServiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTCarServiceTests.m; sourceTree = "<group>"; };
+		66D27A322151384E002E4CC4 /* cars.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cars.json; sourceTree = "<group>"; };
+		66D27A3521513DD2002E4CC4 /* CTCarListModuleBuilderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTCarListModuleBuilderTests.m; sourceTree = "<group>"; };
+		66D27A3721513EC5002E4CC4 /* CTCarDetailsModuleBuilderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTCarDetailsModuleBuilderTests.m; sourceTree = "<group>"; };
+		66D27A3921514051002E4CC4 /* CTCarListPresenterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTCarListPresenterTests.m; sourceTree = "<group>"; };
+		97C59FA2B8930763FA71A29F /* Pods-CarTrawler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarTrawler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarTrawler/Pods-CarTrawler.debug.xcconfig"; sourceTree = "<group>"; };
+		C25F0D7F59BEC65DCD0172D2 /* libPods-CarTrawlerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CarTrawlerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7F37876939B51DC330347E3 /* Pods-CarTrawler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarTrawler.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarTrawler/Pods-CarTrawler.release.xcconfig"; sourceTree = "<group>"; };
+		CAF273E376CEB1FB7F8EC113 /* Pods-CarTrawlerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarTrawlerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarTrawlerTests/Pods-CarTrawlerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D6BC150812A48C0E032D55DA /* libPods-CarTrawler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CarTrawler.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66D2798E2150E675002E4CC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0780CF8CE3FC8842C57E0F5A /* libPods-CarTrawler.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66D279A62150E677002E4CC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45A12D5B673993ED8C16717E /* libPods-CarTrawlerTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C18E5EFE5AB88EB543B982B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97C59FA2B8930763FA71A29F /* Pods-CarTrawler.debug.xcconfig */,
+				C7F37876939B51DC330347E3 /* Pods-CarTrawler.release.xcconfig */,
+				CAF273E376CEB1FB7F8EC113 /* Pods-CarTrawlerTests.debug.xcconfig */,
+				071D19F198A87BED1CF15A31 /* Pods-CarTrawlerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		66D279882150E675002E4CC4 = {
+			isa = PBXGroup;
+			children = (
+				66D279932150E675002E4CC4 /* CarTrawler */,
+				66D279AC2150E677002E4CC4 /* CarTrawlerTests */,
+				66D279922150E675002E4CC4 /* Products */,
+				3C18E5EFE5AB88EB543B982B /* Pods */,
+				DA0901AA826307067C652962 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		66D279922150E675002E4CC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66D279912150E675002E4CC4 /* CarTrawler.app */,
+				66D279A92150E677002E4CC4 /* CarTrawlerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66D279932150E675002E4CC4 /* CarTrawler */ = {
+			isa = PBXGroup;
+			children = (
+				66D279B82150E6E0002E4CC4 /* AppDelegate */,
+				66D279B92150E6FC002E4CC4 /* Categories */,
+				66D279BA2150E704002E4CC4 /* Models */,
+				66D279BB2150E70C002E4CC4 /* Modules */,
+				66D279BC2150E713002E4CC4 /* Resources */,
+				66D279BD2150E71E002E4CC4 /* Services */,
+				66D279972150E675002E4CC4 /* ViewController.h */,
+				66D279982150E676002E4CC4 /* ViewController.m */,
+				66D2799A2150E676002E4CC4 /* Main.storyboard */,
+				66D2799D2150E677002E4CC4 /* Assets.xcassets */,
+				66D2799F2150E677002E4CC4 /* LaunchScreen.storyboard */,
+				66D279A22150E677002E4CC4 /* Info.plist */,
+				66D279A32150E677002E4CC4 /* main.m */,
+			);
+			path = CarTrawler;
+			sourceTree = "<group>";
+		};
+		66D279AC2150E677002E4CC4 /* CarTrawlerTests */ = {
+			isa = PBXGroup;
+			children = (
+				66D27A2A21512E0A002E4CC4 /* Modules */,
+				66D27A2D21512E3A002E4CC4 /* Services */,
+				66D279AF2150E677002E4CC4 /* Info.plist */,
+			);
+			path = CarTrawlerTests;
+			sourceTree = "<group>";
+		};
+		66D279B82150E6E0002E4CC4 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				66D279942150E675002E4CC4 /* AppDelegate.h */,
+				66D279952150E675002E4CC4 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		66D279B92150E6FC002E4CC4 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				66D279BE2150E763002E4CC4 /* UIColor+CTColors.h */,
+				66D279BF2150E763002E4CC4 /* UIColor+CTColors.m */,
+				66D279C12150E7AD002E4CC4 /* UILabel+CTStyle.h */,
+				66D279C22150E7AD002E4CC4 /* UILabel+CTStyle.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		66D279BA2150E704002E4CC4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				66D279C42150FB18002E4CC4 /* CTModel.h */,
+				66D279C52150FB18002E4CC4 /* CTModel.m */,
+				66D279C72150FE3D002E4CC4 /* CTLocation.h */,
+				66D279C82150FE3D002E4CC4 /* CTLocation.m */,
+				66D279CA2150FE78002E4CC4 /* CTRentalCore.h */,
+				66D279CB2150FE78002E4CC4 /* CTRentalCore.m */,
+				66D279CD2150FEAE002E4CC4 /* CTRentalStore.h */,
+				66D279CE2150FEAE002E4CC4 /* CTRentalStore.m */,
+				66D279D02150FEFA002E4CC4 /* CTVehicle.h */,
+				66D279D12150FEFA002E4CC4 /* CTVehicle.m */,
+				66D279D32150FF34002E4CC4 /* CTVehicleVendorAvailables.h */,
+				66D279D42150FF34002E4CC4 /* CTVehicleVendorAvailables.m */,
+				66D279D62150FF6C002E4CC4 /* CTVendor.h */,
+				66D279D72150FF6C002E4CC4 /* CTVendor.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		66D279BB2150E70C002E4CC4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				66D279DA21510089002E4CC4 /* CarList */,
+				66D279D92151007D002E4CC4 /* CarDetails */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		66D279BC2150E713002E4CC4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				66D27A25215120F3002E4CC4 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		66D279BD2150E71E002E4CC4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				66D27A142151113B002E4CC4 /* CarService */,
+				66D27A1121511116002E4CC4 /* CTRestClient.h */,
+				66D27A1221511116002E4CC4 /* CTRestClient.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		66D279D92151007D002E4CC4 /* CarDetails */ = {
+			isa = PBXGroup;
+			children = (
+				66D27A0721510C18002E4CC4 /* Presenter */,
+				66D27A0821510C20002E4CC4 /* View */,
+				66D27A1D21511CFF002E4CC4 /* CTCarDetailsModuleBuilder.h */,
+				66D27A1E21511CFF002E4CC4 /* CTCarDetailsModuleBuilder.m */,
+			);
+			path = CarDetails;
+			sourceTree = "<group>";
+		};
+		66D279DA21510089002E4CC4 /* CarList */ = {
+			isa = PBXGroup;
+			children = (
+				66D279DB215100A1002E4CC4 /* CTCarListModuleBuilder.h */,
+				66D279DC215100A1002E4CC4 /* CTCarListModuleBuilder.m */,
+				66D279E22151010F002E4CC4 /* Interactor */,
+				66D279E121510105002E4CC4 /* Model */,
+				66D279E0215100FC002E4CC4 /* Presenter */,
+				66D279DF215100EA002E4CC4 /* Router */,
+				66D279DE215100DA002E4CC4 /* View */,
+			);
+			path = CarList;
+			sourceTree = "<group>";
+		};
+		66D279DE215100DA002E4CC4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				66D279E421510124002E4CC4 /* Cell */,
+				66D279E32151011E002E4CC4 /* Header */,
+				66D27A0421510BB7002E4CC4 /* CTCarListViewController.h */,
+				66D27A0521510BB7002E4CC4 /* CTCarListViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		66D279DF215100EA002E4CC4 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				66D279ED215109A1002E4CC4 /* CTCarListRouter.h */,
+				66D279EE215109A1002E4CC4 /* CTCarListRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		66D279E0215100FC002E4CC4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				66D279F0215109F0002E4CC4 /* CTCarListEventHandler.h */,
+				66D279F121510A0C002E4CC4 /* CTCarListPresenter.h */,
+				66D279F221510A0C002E4CC4 /* CTCarListPresenter.m */,
+				66D279F421510A44002E4CC4 /* CTCarListViewModelMapper.h */,
+				66D279F521510A44002E4CC4 /* CTCarListViewModelMapper.m */,
+				66D279F721510A7D002E4CC4 /* CTCarListViewProtocol.h */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		66D279E121510105002E4CC4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				66D279F821510AB2002E4CC4 /* CTCarListViewModel.h */,
+				66D279F921510AB2002E4CC4 /* CTCarListViewModel.m */,
+				66D279FB21510ADA002E4CC4 /* CTCarVendorViewModel.h */,
+				66D279FC21510ADA002E4CC4 /* CTCarVendorViewModel.m */,
+				66D279FE21510B06002E4CC4 /* CTCarViewModel.h */,
+				66D279FF21510B06002E4CC4 /* CTCarViewModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		66D279E22151010F002E4CC4 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				66D27A0121510B44002E4CC4 /* CTCarListInteractor.h */,
+				66D27A0221510B44002E4CC4 /* CTCarListInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		66D279E32151011E002E4CC4 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				66D279E52151014E002E4CC4 /* CTCarListHeaderView.h */,
+				66D279E62151014E002E4CC4 /* CTCarListHeaderView.m */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		66D279E421510124002E4CC4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				66D279E821510909002E4CC4 /* CTCarListCell.h */,
+				66D279E921510909002E4CC4 /* CTCarListCell.m */,
+				66D279EA21510909002E4CC4 /* CTCarListCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		66D27A0721510C18002E4CC4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				66D27A0921510DC4002E4CC4 /* CTCarDetailsEventHandler.h */,
+				66D27A0A21510DDD002E4CC4 /* CTCarDetailsPresenter.h */,
+				66D27A0B21510DDD002E4CC4 /* CTCarDetailsPresenter.m */,
+				66D27A0D21511054002E4CC4 /* CTCarDetailsViewProtocol.h */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		66D27A0821510C20002E4CC4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				66D27A0E215110C1002E4CC4 /* CTCarDetailsViewController.h */,
+				66D27A0F215110C1002E4CC4 /* CTCarDetailsViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		66D27A142151113B002E4CC4 /* CarService */ = {
+			isa = PBXGroup;
+			children = (
+				66D27A1521511175002E4CC4 /* CTCarService.h */,
+				66D27A1621511175002E4CC4 /* CTCarService.m */,
+				66D27A18215111AA002E4CC4 /* CTCarServiceMapper.h */,
+				66D27A19215111AA002E4CC4 /* CTCarServiceMapper.m */,
+			);
+			path = CarService;
+			sourceTree = "<group>";
+		};
+		66D27A2A21512E0A002E4CC4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				66D27A2B21512E19002E4CC4 /* CarList */,
+				66D27A2C21512E21002E4CC4 /* CarDetails */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		66D27A2B21512E19002E4CC4 /* CarList */ = {
+			isa = PBXGroup;
+			children = (
+				66D27A3521513DD2002E4CC4 /* CTCarListModuleBuilderTests.m */,
+				66D27A3921514051002E4CC4 /* CTCarListPresenterTests.m */,
+			);
+			path = CarList;
+			sourceTree = "<group>";
+		};
+		66D27A2C21512E21002E4CC4 /* CarDetails */ = {
+			isa = PBXGroup;
+			children = (
+				66D27A3721513EC5002E4CC4 /* CTCarDetailsModuleBuilderTests.m */,
+			);
+			path = CarDetails;
+			sourceTree = "<group>";
+		};
+		66D27A2D21512E3A002E4CC4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				66D27A322151384E002E4CC4 /* cars.json */,
+				66D27A3021512E91002E4CC4 /* CTCarServiceTests.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DA0901AA826307067C652962 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6BC150812A48C0E032D55DA /* libPods-CarTrawler.a */,
+				C25F0D7F59BEC65DCD0172D2 /* libPods-CarTrawlerTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66D279902150E675002E4CC4 /* CarTrawler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66D279B22150E677002E4CC4 /* Build configuration list for PBXNativeTarget "CarTrawler" */;
+			buildPhases = (
+				69AC758906A0037AC0F02AEF /* [CP] Check Pods Manifest.lock */,
+				66D2798D2150E675002E4CC4 /* Sources */,
+				66D2798E2150E675002E4CC4 /* Frameworks */,
+				66D2798F2150E675002E4CC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarTrawler;
+			productName = CarTrawler;
+			productReference = 66D279912150E675002E4CC4 /* CarTrawler.app */;
+			productType = "com.apple.product-type.application";
+		};
+		66D279A82150E677002E4CC4 /* CarTrawlerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66D279B52150E677002E4CC4 /* Build configuration list for PBXNativeTarget "CarTrawlerTests" */;
+			buildPhases = (
+				4C13EEEE5B1E384C01A5BB5E /* [CP] Check Pods Manifest.lock */,
+				66D279A52150E677002E4CC4 /* Sources */,
+				66D279A62150E677002E4CC4 /* Frameworks */,
+				66D279A72150E677002E4CC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66D279AB2150E677002E4CC4 /* PBXTargetDependency */,
+			);
+			name = CarTrawlerTests;
+			productName = CarTrawlerTests;
+			productReference = 66D279A92150E677002E4CC4 /* CarTrawlerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66D279892150E675002E4CC4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Rafael Silva Ortiz";
+				TargetAttributes = {
+					66D279902150E675002E4CC4 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					66D279A82150E677002E4CC4 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 66D279902150E675002E4CC4;
+					};
+				};
+			};
+			buildConfigurationList = 66D2798C2150E675002E4CC4 /* Build configuration list for PBXProject "CarTrawler" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"pt-BR",
+			);
+			mainGroup = 66D279882150E675002E4CC4;
+			productRefGroup = 66D279922150E675002E4CC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66D279902150E675002E4CC4 /* CarTrawler */,
+				66D279A82150E677002E4CC4 /* CarTrawlerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66D2798F2150E675002E4CC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66D27A27215120F3002E4CC4 /* Localizable.strings in Resources */,
+				66D279A12150E677002E4CC4 /* LaunchScreen.storyboard in Resources */,
+				66D2799E2150E677002E4CC4 /* Assets.xcassets in Resources */,
+				66D2799C2150E676002E4CC4 /* Main.storyboard in Resources */,
+				66D27A3421513988002E4CC4 /* cars.json in Resources */,
+				66D279EC21510909002E4CC4 /* CTCarListCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66D279A72150E677002E4CC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66D27A332151384E002E4CC4 /* cars.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C13EEEE5B1E384C01A5BB5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CarTrawlerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69AC758906A0037AC0F02AEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CarTrawler-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66D2798D2150E675002E4CC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66D279992150E676002E4CC4 /* ViewController.m in Sources */,
+				66D279E72151014E002E4CC4 /* CTCarListHeaderView.m in Sources */,
+				66D27A1A215111AA002E4CC4 /* CTCarServiceMapper.m in Sources */,
+				66D279EB21510909002E4CC4 /* CTCarListCell.m in Sources */,
+				66D27A0021510B06002E4CC4 /* CTCarViewModel.m in Sources */,
+				66D279C92150FE3D002E4CC4 /* CTLocation.m in Sources */,
+				66D27A0C21510DDD002E4CC4 /* CTCarDetailsPresenter.m in Sources */,
+				66D27A1F21511CFF002E4CC4 /* CTCarDetailsModuleBuilder.m in Sources */,
+				66D279FD21510ADA002E4CC4 /* CTCarVendorViewModel.m in Sources */,
+				66D27A10215110C1002E4CC4 /* CTCarDetailsViewController.m in Sources */,
+				66D279A42150E677002E4CC4 /* main.m in Sources */,
+				66D279F621510A44002E4CC4 /* CTCarListViewModelMapper.m in Sources */,
+				66D27A0321510B44002E4CC4 /* CTCarListInteractor.m in Sources */,
+				66D279C62150FB18002E4CC4 /* CTModel.m in Sources */,
+				66D279EF215109A1002E4CC4 /* CTCarListRouter.m in Sources */,
+				66D279C32150E7AD002E4CC4 /* UILabel+CTStyle.m in Sources */,
+				66D27A1721511175002E4CC4 /* CTCarService.m in Sources */,
+				66D279FA21510AB2002E4CC4 /* CTCarListViewModel.m in Sources */,
+				66D279C02150E763002E4CC4 /* UIColor+CTColors.m in Sources */,
+				66D279D82150FF6C002E4CC4 /* CTVendor.m in Sources */,
+				66D279CF2150FEAE002E4CC4 /* CTRentalStore.m in Sources */,
+				66D279D52150FF34002E4CC4 /* CTVehicleVendorAvailables.m in Sources */,
+				66D279F321510A0C002E4CC4 /* CTCarListPresenter.m in Sources */,
+				66D27A0621510BB7002E4CC4 /* CTCarListViewController.m in Sources */,
+				66D279962150E675002E4CC4 /* AppDelegate.m in Sources */,
+				66D279DD215100A1002E4CC4 /* CTCarListModuleBuilder.m in Sources */,
+				66D27A1321511116002E4CC4 /* CTRestClient.m in Sources */,
+				66D279CC2150FE78002E4CC4 /* CTRentalCore.m in Sources */,
+				66D279D22150FEFA002E4CC4 /* CTVehicle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66D279A52150E677002E4CC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66D27A3A21514051002E4CC4 /* CTCarListPresenterTests.m in Sources */,
+				66D27A3121512E91002E4CC4 /* CTCarServiceTests.m in Sources */,
+				66D27A3621513DD2002E4CC4 /* CTCarListModuleBuilderTests.m in Sources */,
+				66D27A3821513EC5002E4CC4 /* CTCarDetailsModuleBuilderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66D279AB2150E677002E4CC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66D279902150E675002E4CC4 /* CarTrawler */;
+			targetProxy = 66D279AA2150E677002E4CC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		66D2799A2150E676002E4CC4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66D2799B2150E676002E4CC4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		66D2799F2150E677002E4CC4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66D279A02150E677002E4CC4 /* Base */,
+				66D27A2121512064002E4CC4 /* pt-BR */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		66D27A25215120F3002E4CC4 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66D27A26215120F3002E4CC4 /* Base */,
+				66D27A2921512122002E4CC4 /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66D279B02150E677002E4CC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		66D279B12150E677002E4CC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66D279B32150E677002E4CC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97C59FA2B8930763FA71A29F /* Pods-CarTrawler.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CarTrawler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cartrawler.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		66D279B42150E677002E4CC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7F37876939B51DC330347E3 /* Pods-CarTrawler.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CarTrawler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cartrawler.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		66D279B62150E677002E4CC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAF273E376CEB1FB7F8EC113 /* Pods-CarTrawlerTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CarTrawlerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CarTrawler.CarTrawlerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarTrawler.app/CarTrawler";
+			};
+			name = Debug;
+		};
+		66D279B72150E677002E4CC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 071D19F198A87BED1CF15A31 /* Pods-CarTrawlerTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CarTrawlerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CarTrawler.CarTrawlerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarTrawler.app/CarTrawler";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66D2798C2150E675002E4CC4 /* Build configuration list for PBXProject "CarTrawler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66D279B02150E677002E4CC4 /* Debug */,
+				66D279B12150E677002E4CC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66D279B22150E677002E4CC4 /* Build configuration list for PBXNativeTarget "CarTrawler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66D279B32150E677002E4CC4 /* Debug */,
+				66D279B42150E677002E4CC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66D279B52150E677002E4CC4 /* Build configuration list for PBXNativeTarget "CarTrawlerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66D279B62150E677002E4CC4 /* Debug */,
+				66D279B72150E677002E4CC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66D279892150E675002E4CC4 /* Project object */;
+}
